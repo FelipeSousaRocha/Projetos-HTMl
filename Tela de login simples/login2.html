@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>tela de login</title>
+
+    <link rel="stylesheet" href="css/estilo2.css">
+
+    <style>
+        body{
+            background: url(img/fundo.jpg);
+            background: linear-gradient(-105deg, #90697b, #14164b 40%, #2f2a60, );
+            background-size: 100% 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            
+        }
+        
+        .caixalogin{
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 300px;
+            padding: 30px;
+            border-radius: 50px 10px 50px 10px;
+            box-shadow: 0 20px 20px;
+            position: relative;
+        }
+
+        .caixalogin h2{
+            color: #fff;
+            text-align: center;
+            margin: 20px 0 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .caixalogin .campo input{
+            width: 100%;
+            padding: 5px;
+            font-size: 15px;
+            background: transparent;
+            color: white;
+            letter-spacing: 2px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid white;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+
+        }
+
+        .caixalogin .campo{
+            position: relative;
+        }
+
+        .caixalogin .campo label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .caixalogin .campo input:focus~label, .caixalogin .campo input:valid~label{
+            top: -20px;
+            left: 0;
+            color: violet;
+            font-size: 13px;
+        }
+
+        #checkbox2{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12ox;
+        }
+
+        .caixalogin button{
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: linear-gradient(to right, #3c269c, #eb7a80);
+            padding: 10px 20px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #cadastro{
+            font-weight: bold;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            cursor: pointer;
+        }
+
+.img-user{
+    background-color: purple;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -10%;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-user img{width: 50%;
+        border-radius: 10px;}
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="caixalogin"> 
+        <div class="img-user">
+           <img src="img/usuario.png" alt="">
+        </div>
+        <h2>Logar no sistema</h2>
+        <form>
+
+            <div class="campo"> 
+                <input type="text" name="" id="" required>
+                <label>Usuário</label>
+            </div>
+
+            <div class="campo"> 
+                <input type="password" name="" id="" required>
+                <label>Senha</label>
+            </div>
+
+            <input type="checkbox" checked='checked' class="checkbox">
+            <label id="checkbox2">Lembre-me</label><br><br>
+
+            <button>Entrar</button>
+            <p id="cadastro">Efetuar cadastro</p>
+        </form>
+
+
+    </div>
+    <div></div>
+
+</body>
+</html>
