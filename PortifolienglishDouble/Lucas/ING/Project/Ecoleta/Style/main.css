@@ -1,0 +1,20 @@
+:root{
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+#img{
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
